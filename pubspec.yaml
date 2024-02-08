@@ -1,7 +1,9 @@
 name: animated_mouse_cursor
-description: "A new Flutter package project."
-version: 1.0.0
+description: "Flutter package for using custom mouse cursor on flutter web"
+version: 0.0.2
 homepage: "https://github.com/bijith-git/animated_mouse_cursor"
+repository: "https://github.com/bijith-git/animated_mouse_cursor"
+issue_tracker: "https://github.com/bijith-git/animated_mouse_cursor/issues"
 
 environment:
   sdk: ">=3.2.3 <4.0.0"
