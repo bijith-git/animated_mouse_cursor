@@ -1,17 +1,20 @@
 name: animated_mouse_cursor
 description: "Flutter package for using custom mouse cursor on flutter web"
-version: 0.0.2
+version: 1.1.0
 homepage: "https://github.com/bijith-git/animated_mouse_cursor"
 repository: "https://github.com/bijith-git/animated_mouse_cursor"
 issue_tracker: "https://github.com/bijith-git/animated_mouse_cursor/issues"
 
 environment:
   sdk: ">=3.2.3 <4.0.0"
-  flutter: ">=1.17.0"
+  flutter: ">=1.20.0"
 
 dependencies:
   flutter:
     sdk: flutter
+  flutter_web_plugins:
+    sdk: flutter
+  plugin_platform_interface: ^2.1.8
   provider: ^6.1.1
 
 dev_dependencies:
@@ -20,3 +23,8 @@ dev_dependencies:
   flutter_lints: ^2.0.0
 
 flutter:
+  plugin:
+    platforms:
+      web:
+        pluginClass: AnimatedMouseCursorWeb
+        fileName: animated_mouse_cursor_web.dart

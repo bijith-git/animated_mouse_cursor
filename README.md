@@ -7,7 +7,7 @@ This Flutter package create beautiful custom mouse cursor on flutter web
 
 ### Demo
 
-<IMG height="400px" src="https://raw.githubusercontent.com/bijith-git/animated_mouse_cursor/master/example/demo%20video/demo.gif"></IMG>
+<IMG height="400px" src="https://raw.githubusercontent.com/bijith-git/animated_mouse_cursor/master/example/demo%20video/demo.mp4"></IMG>
 
 ## Installation
 
@@ -41,24 +41,24 @@ The AnimatedCursor widget allows you to create a defualt cursor for your mouse y
       title: 'Animated Cursor Demo',
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
-        useMaterial3: true),
-      home: const AnimatedCursor(
-          enableBlendMask: false,
-          child: MyHomePage(title: 'Animated Cursor Demo')));
+        useMaterial3: true,
+      ),
+      home: AnimatedMouseCursor(
+        child: const MyHomePage(title: 'Animated Cursor Demo'),
+      ),
+    );
 
 ```
 
+<!--
 The AnimatedCursorMouseRegion widget create a custom animation for your selected widget by wraping that widget.
 
 ```dart
-    AnimatedCursorMouseRegion(
-    decoration: const BoxDecoration(
-      color: Colors.red,
-      shape: BoxShape.circle,
-    ),
-    child: Text(
-      'custom effect to cursor',
-      style: Theme.of(context).textTheme.headlineMedium,
-    ),
-    ),
-```
+        AnimatedCursorMouseRegion(
+          heightMultiplyer: 5,
+          child: Text(
+            "Hover Widget Animation",
+            style: Theme.of(context).textTheme.titleLarge,
+          ),
+        ),
+``` -->
