@@ -7,7 +7,7 @@ This Flutter package create beautiful custom mouse cursor on flutter web
 
 ### Demo
 
-<IMG height="400px" src="https://raw.githubusercontent.com/bijith-git/animated_mouse_cursor/master/example/demo%20video/demo.mp4"></IMG>
+<video controls autoplay height="400px" src="https://raw.githubusercontent.com/bijith-git/animated_mouse_cursor/master/example/demo%20video/demo.mp4" type="video/mp4"></video >
 
 ## Installation
 
